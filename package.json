@@ -1,0 +1,26 @@
+{
+    "name": "cocor-csharp-syntax",
+    "displayName": "Coco/R C# Syntax Highlight",
+    "description": "Coco/R C# syntax highligting based on mschoebel's sublime text plugin (https://github.com/mschoebel/cocosyntax)",
+    "version": "0.0.1",
+    "publisher": "christianknu",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cocor-csharp",
+            "aliases": ["Coco/R C#", "cocor-csharp"],
+            "extensions": [".atg"],
+            "configuration": "./cocor-csharp.configuration.json"
+        }],
+        "grammars": [{
+            "language": "cocor-csharp",
+            "scopeName": "source.cocor",
+            "path": "./syntaxes/cocor-csharp.tmLanguage"
+        }]
+    }
+}
